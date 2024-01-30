@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #FF5E00;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #E94E77;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.about-me,
+.projects,
+.contact {
+    margin: 20px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.about-me::before,
+.projects::before,
+.contact::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+}
+
+.about-me::before {
+    border-color: transparent transparent #fff transparent;
+}
+
+.projects::before {
+    border-color: transparent transparent #fff transparent;
+}
+
+.contact::before {
+    border-color: transparent transparent #fff transparent;
+}
+
+.projects,
+.contact {
+    border-top: 2px solid #FF5E00;
+    padding-top: 40px;
+}
+
+.project {
+    margin-bottom: 30px;
+    background-color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 600px) {
+    header {
+        font-size: 1.5em;
+        padding: 30px 15px;
+    }
+}
